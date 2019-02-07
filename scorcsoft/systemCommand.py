@@ -5,7 +5,7 @@ import scorcsoft.globalAssets as sga
 def main(cmd):
     badCommand = ["vi","vim","ex","python","python3","cd"]
     if cmd in badCommand:
-        sga.infoPrint("command \"%s\" is not supported in SFW :)"%(cmd))
+        sga.infoPrint("command \"%s\" is not supported in SPF :)"%(cmd))
         return
     result = subprocess.getstatusoutput(cmd)
     if result[0] == 0:
